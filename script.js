@@ -1,0 +1,467 @@
+var cars = [{
+  "id": 1,
+  "brand": "Porsche",
+  "car_name": "911",
+  "color": "Indigo",
+  "year": 1985,
+  "price": "457.22",
+  "img": "http://dummyimage.com/238x232.jpg/cc0000/ffffff",
+  "show": true
+}, {
+  "id": 2,
+  "brand": "Acura",
+  "car_name": "RL",
+  "color": "Indigo",
+  "year": 1999,
+  "price": "508.68",
+  "img": "http://dummyimage.com/166x118.jpg/dddddd/000000",
+  "show": true
+}, {
+  "id": 3,
+  "brand": "Nissan",
+  "car_name": "Frontier",
+  "color": "Pink",
+  "year": 2000,
+  "price": "663.71",
+  "img": "http://dummyimage.com/133x106.jpg/cc0000/ffffff",
+  "show": true
+}, {
+  "id": 4,
+  "brand": "Volkswagen",
+  "car_name": "riolet",
+  "color": "Violet",
+  "year": 1993,
+  "price": "668.22",
+  "img": "http://dummyimage.com/179x234.jpg/dddddd/000000",
+  "show": true
+}, {
+  "id": 5,
+  "brand": "Mercedes-Benz",
+  "car_name": "400SEL",
+  "color": "Puce",
+  "year": 1993,
+  "price": "728.81",
+  "img": "http://dummyimage.com/208x214.jpg/dddddd/000000",
+  "show": true
+}, {
+  "id": 6,
+  "brand": "Cadillac",
+  "car_name": "Escalade ESV",
+  "color": "Teal",
+  "year": 2010,
+  "price": "263.54",
+  "img": "http://dummyimage.com/127x238.jpg/5fa2dd/ffffff",
+  "show": false
+}, {
+  "id": 7,
+  "brand": "Land Rover",
+  "car_name": "LR4",
+  "color": "Indigo",
+  "year": 2012,
+  "price": "457.75",
+  "img": "http://dummyimage.com/135x250.jpg/cc0000/ffffff",
+  "show": false
+}, {
+  "id": 8,
+  "brand": "Chevrolet",
+  "car_name": "Impala",
+  "color": "Mauv",
+  "year": 2001,
+  "price": "665.21",
+  "img": "http://dummyimage.com/249x172.jpg/5fa2dd/ffffff",
+  "show": false
+}, {
+  "id": 9,
+  "brand": "Mazda",
+  "car_name": "626",
+  "color": "Mauv",
+  "year": 1986,
+  "price": "546.61",
+  "img": "http://dummyimage.com/195x152.jpg/dddddd/000000",
+  "show": false
+}, {
+  "id": 10,
+  "brand": "Eagle",
+  "car_name": "Talon",
+  "color": "Maroon",
+  "year": 1994,
+  "price": "208.97",
+  "img": "http://dummyimage.com/101x110.jpg/5fa2dd/ffffff",
+  "show": true
+}, {
+  "id": 11,
+  "brand": "Mercedes-Benz",
+  "car_name": "G-Class",
+  "color": "Maroon",
+  "year": 2005,
+  "price": "764.74",
+  "img": "http://dummyimage.com/250x189.jpg/cc0000/ffffff",
+  "show": true
+}, {
+  "id": 12,
+  "brand": "Chevrolet",
+  "car_name": "Lumina",
+  "color": "Fuscia",
+  "year": 1995,
+  "price": "629.85",
+  "img": "http://dummyimage.com/240x216.jpg/ff4444/ffffff",
+  "show": true
+}, {
+  "id": 13,
+  "brand": "Chevrolet",
+  "car_name": "Tahoe",
+  "color": "Maroon",
+  "year": 2005,
+  "price": "734.30",
+  "img": "http://dummyimage.com/167x152.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 14,
+  "brand": "Nissan",
+  "car_name": "Frontier",
+  "color": "Blue",
+  "year": 2012,
+  "price": "283.80",
+  "img": "http://dummyimage.com/231x194.jpg/dddddd/000000",
+  "show": false
+}, {
+  "id": 15,
+  "brand": "Lotus",
+  "car_name": "Exige",
+  "color": "Fuscia",
+  "year": 2007,
+  "price": "413.59",
+  "img": "http://dummyimage.com/130x148.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 16,
+  "brand": "Plymouth",
+  "car_name": "Laser",
+  "color": "Aquamarine",
+  "year": 1990,
+  "price": "435.01",
+  "img": "http://dummyimage.com/145x106.jpg/cc0000/ffffff",
+  "show": false
+}, {
+  "id": 17,
+  "brand": "Volkswagen",
+  "car_name": "New Beetle",
+  "color": "Maroon",
+  "year": 1999,
+  "price": "545.46",
+  "img": "http://dummyimage.com/207x236.jpg/5fa2dd/ffffff",
+  "show": true
+}, {
+  "id": 18,
+  "brand": "Chrysler",
+  "car_name": "Pacifica",
+  "color": "Orange",
+  "year": 2004,
+  "price": "449.30",
+  "img": "http://dummyimage.com/161x115.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 19,
+  "brand": "Ford",
+  "car_name": "Thunderbird",
+  "color": "Mauv",
+  "year": 1967,
+  "price": "290.08",
+  "img": "http://dummyimage.com/201x170.jpg/cc0000/ffffff",
+  "show": false
+}, {
+  "id": 20,
+  "brand": "Mazda",
+  "car_name": "Familia",
+  "color": "Mauv",
+  "year": 1988,
+  "price": "735.75",
+  "img": "http://dummyimage.com/245x223.jpg/cc0000/ffffff",
+  "show": false
+}, {
+  "id": 21,
+  "brand": "Lexus",
+  "car_name": "ES",
+  "color": "Pink",
+  "year": 2001,
+  "price": "702.94",
+  "img": "http://dummyimage.com/202x179.jpg/5fa2dd/ffffff",
+  "show": false
+}, {
+  "id": 22,
+  "brand": "Mercedes-Benz",
+  "car_name": "E-Class",
+  "color": "Aquamarine",
+  "year": 2002,
+  "price": "772.05",
+  "img": "http://dummyimage.com/206x180.jpg/dddddd/000000",
+  "show": false
+}, {
+  "id": 23,
+  "brand": "Ford",
+  "car_name": "Aerostar",
+  "color": "Violet",
+  "year": 1997,
+  "price": "450.80",
+  "img": "http://dummyimage.com/190x225.jpg/dddddd/000000",
+  "show": false
+}, {
+  "id": 24,
+  "brand": "Chevrolet",
+  "car_name": "Astro",
+  "color": "Blue",
+  "year": 2000,
+  "price": "549.28",
+  "img": "http://dummyimage.com/219x144.jpg/5fa2dd/ffffff",
+  "show": true
+}, {
+  "id": 25,
+  "brand": "Lexus",
+  "car_name": "RX",
+  "color": "Khaki",
+  "year": 2010,
+  "price": "234.28",
+  "img": "http://dummyimage.com/104x222.jpg/ff4444/ffffff",
+  "show": true
+}, {
+  "id": 26,
+  "brand": "Chrysler",
+  "car_name": "Town & Country",
+  "color": "Teal",
+  "year": 2003,
+  "price": "406.95",
+  "img": "http://dummyimage.com/215x239.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 27,
+  "brand": "Dodge",
+  "car_name": "Ram Wagon B150",
+  "color": "Mauv",
+  "year": 1992,
+  "price": "584.62",
+  "img": "http://dummyimage.com/144x138.jpg/cc0000/ffffff",
+  "show": false
+}, {
+  "id": 28,
+  "brand": "Saturn",
+  "car_name": "Aura",
+  "color": "Maroon",
+  "year": 2008,
+  "price": "702.79",
+  "img": "http://dummyimage.com/146x208.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 29,
+  "brand": "Mercedes-Benz",
+  "car_name": "SL-Class",
+  "color": "Puce",
+  "year": 2005,
+  "price": "375.78",
+  "img": "http://dummyimage.com/106x179.jpg/dddddd/000000",
+  "show": true
+}, {
+  "id": 30,
+  "brand": "Mercedes-Benz",
+  "car_name": "C-Class",
+  "color": "Green",
+  "year": 2005,
+  "price": "494.20",
+  "img": "http://dummyimage.com/139x184.jpg/5fa2dd/ffffff",
+  "show": false
+}, {
+  "id": 31,
+  "brand": "Chevrolet",
+  "car_name": "Camaro",
+  "color": "Blue",
+  "year": 1976,
+  "price": "583.96",
+  "img": "http://dummyimage.com/155x231.jpg/ff4444/ffffff",
+  "show": true
+}, {
+  "id": 32,
+  "brand": "Volkswagen",
+  "car_name": "New Beetle",
+  "color": "Goldenrod",
+  "year": 2005,
+  "price": "318.50",
+  "img": "http://dummyimage.com/125x148.jpg/5fa2dd/ffffff",
+  "show": true
+}, {
+  "id": 33,
+  "brand": "Volkswagen",
+  "car_name": "Jetta",
+  "color": "Puce",
+  "year": 1988,
+  "price": "370.88",
+  "img": "http://dummyimage.com/140x132.jpg/cc0000/ffffff",
+  "show": true
+}, {
+  "id": 34,
+  "brand": "Nissan",
+  "car_name": "GT-R",
+  "color": "Maroon",
+  "year": 2011,
+  "price": "314.60",
+  "img": "http://dummyimage.com/120x225.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 35,
+  "brand": "Ford",
+  "car_name": "F-Series",
+  "color": "Green",
+  "year": 1987,
+  "price": "690.77",
+  "img": "http://dummyimage.com/172x224.jpg/dddddd/000000",
+  "show": false
+}, {
+  "id": 36,
+  "brand": "Mercedes-Benz",
+  "car_name": "E-Class",
+  "color": "Teal",
+  "year": 1985,
+  "price": "653.44",
+  "img": "http://dummyimage.com/102x138.jpg/cc0000/ffffff",
+  "show": true
+}, {
+  "id": 37,
+  "brand": "Subaru",
+  "car_name": "Legacy",
+  "color": "Blue",
+  "year": 2008,
+  "price": "572.19",
+  "img": "http://dummyimage.com/152x180.jpg/cc0000/ffffff",
+  "show": false
+}, {
+  "id": 38,
+  "brand": "Ford",
+  "car_name": "Taurus",
+  "color": "Violet",
+  "year": 2002,
+  "price": "440.81",
+  "img": "http://dummyimage.com/147x197.jpg/5fa2dd/ffffff",
+  "show": true
+}, {
+  "id": 39,
+  "brand": "Cadillac",
+  "car_name": "STS",
+  "color": "Aquamarine",
+  "year": 2008,
+  "price": "679.15",
+  "img": "http://dummyimage.com/182x170.jpg/ff4444/ffffff",
+  "show": true
+}, {
+  "id": 40,
+  "brand": "Oldsmobile",
+  "car_name": "Cutlass Supreme",
+  "color": "Fuscia",
+  "year": 1997,
+  "price": "547.49",
+  "img": "http://dummyimage.com/208x178.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 41,
+  "brand": "Nissan",
+  "car_name": "Frontier",
+  "color": "Maroon",
+  "year": 2006,
+  "price": "623.25",
+  "img": "http://dummyimage.com/159x236.jpg/dddddd/000000",
+  "show": false
+}, {
+  "id": 42,
+  "brand": "Lincoln",
+  "car_name": "Navigator L",
+  "color": "Crimson",
+  "year": 2007,
+  "price": "260.79",
+  "img": "http://dummyimage.com/126x248.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 43,
+  "brand": "Mitsubishi",
+  "car_name": "Eclipse",
+  "color": "Khaki",
+  "year": 2012,
+  "price": "571.62",
+  "img": "http://dummyimage.com/179x112.jpg/5fa2dd/ffffff",
+  "show": false
+}, {
+  "id": 44,
+  "brand": "Mazda",
+  "car_name": "Tribute",
+  "color": "Indigo",
+  "year": 2002,
+  "price": "776.75",
+  "img": "http://dummyimage.com/192x121.jpg/cc0000/ffffff",
+  "show": true
+}, {
+  "id": 45,
+  "brand": "GMC",
+  "car_name": "Sonoma Club Coupe",
+  "color": "Yellow",
+  "year": 1993,
+  "price": "433.47",
+  "img": "http://dummyimage.com/138x181.jpg/cc0000/ffffff",
+  "show": true
+}, {
+  "id": 46,
+  "brand": "Dodge",
+  "car_name": "Ram Wagon B150",
+  "color": "Violet",
+  "year": 1992,
+  "price": "592.38",
+  "img": "http://dummyimage.com/250x121.jpg/dddddd/000000",
+  "show": false
+}, {
+  "id": 47,
+  "brand": "Volvo",
+  "car_name": "XC60",
+  "color": "Purple",
+  "year": 2009,
+  "price": "628.13",
+  "img": "http://dummyimage.com/118x203.jpg/cc0000/ffffff",
+  "show": false
+}, {
+  "id": 48,
+  "brand": "Oldsmobile",
+  "car_name": "Cutlass Supreme",
+  "color": "Violet",
+  "year": 1997,
+  "price": "297.04",
+  "img": "http://dummyimage.com/201x145.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 49,
+  "brand": "Buick",
+  "car_name": "Regal",
+  "color": "Indigo",
+  "year": 1990,
+  "price": "531.49",
+  "img": "http://dummyimage.com/117x143.jpg/ff4444/ffffff",
+  "show": false
+}, {
+  "id": 50,
+  "brand": "Suzuki",
+  "car_name": "Verona",
+  "color": "Orange",
+  "year": 2006,
+  "price": "428.03",
+  "img": "http://dummyimage.com/163x135.jpg/5fa2dd/ffffff",
+  "show": false
+}]
+let phones= [
+{'title': 'Galaxy S8', 'company': 'Samsung', 'price': 45000 },
+{'title': 'iPhone 7', 'company': 'Apple', 'price': 49000 },
+{'title': 'Nokia N8', 'company': 'HMD Global', 'price': 25000 },
+{'title': 'Galaxy Note 8', 'company': 'Samsung', 'price': 50000 },
+{'title': 'iPhone 8', 'company': 'Apple', 'price': 60000 }]
+
+
+var buttons = document.querySelectorAll('button')
+buttons[2].onclick = function() {
+console.log(1);
+
+}
+for(i = 0; i < phones.length; i++){
+  
+}
