@@ -6,9 +6,36 @@ function sum(...numbers){
 
   return sum;
 }
+
+
 function avg (... numbers){
-  return sum(...numbers) / numbers.length;
+  return sum (...numbers) / numbers.length;
+}
+class SomeMath{
+  avg(...numbers){
+    return sum(...numbers) / numbers.length;
+  }
+
+  max(...numbers){
+    let max = -Infinity;
+
+    for(let i = 0; i < numbers.length; i++){
+      if(numbers[i] > max ){
+        max = numbers [i]
+      }
+    }
+    return max;
+  }
+  merge(a , b){
+    console.log(a);
+    
+    return{
+      ...a,
+      ...b
+    }
+    
+  }
 }
 
-export default avg;
+export default new SomeMath();
 
