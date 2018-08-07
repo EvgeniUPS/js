@@ -25,7 +25,7 @@ console.log("");
 
 var a = 0;
 isTrue = false;
-isTrue && (a = 5);
+isTrue && (a = 2);
 console.log(a);
 
 var someString = "Non-empty string";
