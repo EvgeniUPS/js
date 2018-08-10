@@ -4,7 +4,7 @@ console.log(300000);
 console.log(0xfffcc);
 console.log(0xfffcc);
 console.log(0345);
-console.log(0348);
+// console.log(0348);
 
 console.log(12.45);
 console.log(0.89);
