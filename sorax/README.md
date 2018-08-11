@@ -97,3 +97,9 @@ console.log(newString);
 
 ! - логическое отрицание
 console.log(!true); //false
+
+08.
+console.log(null == undefined); //true
+console.log(null === undefined);//false
+
+09.
