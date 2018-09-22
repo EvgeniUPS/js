@@ -115,7 +115,7 @@ function fn(b, c) {
 console.log(fn(10, 100));
 */
 /////////////////
-var a = [1, 5, 7, 7, 4, 5, 34, 10];
+/* var a = [1, 5, 7, 7, 4, 5, 34, 10];
 function filter(arr, someFn) {
   var result = [];
 
@@ -133,18 +133,34 @@ function greater(than) {
 }
 
 console.log(filter(a, greater(5)));
-console.log(filter(a, greater(8)));
+console.log(filter(a, greater(7)));
 
+for (var i = 1; i < 10; i++) {
+  var result = filter(a, greater(i));
+  console.log(i, result);
+} */
+
+/* 
 function greaterThan5(number) {
   return number > 5;
 }
 function greaterThan6(number) {
   return number > 6;
 }
-
+ */
 // var result = filter(a, function(number) {
 //   return number > 5;
 // });
 
 // console.log(filter(a, greaterThan7));
 // console.log(filter(a, n => n > 7));
+
+/////////////////
+//Анонимные функции
+
+// var fn = function() {};
+
+//IIFE
+(function(a) {
+  console.log(a);
+})("hello");
