@@ -161,7 +161,53 @@ function greaterThan6(number) {
 // var fn = function() {};
 
 //IIFE
-(function(a) {
-  console.log(a);
-})("hello");
-///
+/* 
+(function(a, b) {
+  var hello = "EvgeniUPS";
+  console.log("Hello ", hello, a, b);
+})(1, 2);
+ */
+
+//////////////////////
+//Hoisting. Всплытие//
+//////////////////////
+
+// console.log(a);
+// var a = 10;
+
+/* 
+function fn() {
+  var a = [1, 2, 3];
+  for (var i = 0; i < a.length; i++) {
+    var some = "hello";
+    console.log(i + "...");
+  }
+  console.log(i);
+  console.log(some);
+}
+fn(); 
+*/
+/* 
+console.log(fn(2, 4));
+
+// function fn(a, b) {
+//   return a + b;
+// }
+
+var fn = function(a, b) {
+  return a + b;
+}; */
+
+/* 
+if (10 > 100) {
+  var a = 10;
+  console.log("hello");
+}
+console.log(a);
+ */
+/* 
+console.log(a);
+let a = 10;
+ */
+// var - всплывает
+// let - НЕ! всплывает
