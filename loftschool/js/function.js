@@ -164,3 +164,4 @@ function greaterThan6(number) {
 (function(a) {
   console.log(a);
 })("hello");
+///
