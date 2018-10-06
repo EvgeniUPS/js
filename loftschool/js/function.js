@@ -66,7 +66,7 @@ var a = [1, 2, 3, 4, 5];
 var a2 = a.map(function(number) {
   return number * number;
 });
-
+//
 console.log(a);
 console.log(a2);
 
